@@ -1,108 +1,110 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Dream Coaching
+Dream Coaching  is a complete and simple ecommerce website which provides users with coaching services for their desired video games. The purpose of this is to help users reach their dream rank in the games they play.
 
-Welcome GitHub-Harrison,
+![Am I Responsive Screenshot]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## User Stories
+One of the first things I did after deciding what my project would be was to create some user stories to help figure out what functionality the website would need.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### As a Shopper:
+- I want to View a list of products so that i can select some to purchase
 
-## Gitpod Reminders
+- I want to view individual product details so that i can identify the price, description, session length and image
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- I want to easily view the total of my purchases at any time so that i can avoid spending too much
 
-`python3 -m http.server`
+- I want to be able to Sort the list of avaiable products so that I can Easily identify the best priced and categorically sorted products
 
-A blue button should appear to click: _Make Public_,
+- I want to be able to Search for a product by name or description so that i can Find the best-priced or best-related products across broad categories.
 
-Another blue button should appear to click: _Open Browser_.
+- I want to be able to Easily see what i've searched for and the number of results so that I can Quickly decide whether the product I want is available
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- I want to be able to Easily select the length and quantity of a session when purchasing it so that I can Ensure I don't accidentally select the wrong product, quantity or length.
 
-A blue button should appear to click: _Make Public_,
+- I want to be able to View items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive
 
-Another blue button should appear to click: _Open Browser_.
+- I want to be able to Adjust the quantity of individual items in my bag so that I can Easily make changes to my purchase before checkout
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- I want to be able to Easily enter my payment information so that I can Check out quickly and with no hassles
 
-To log into the Heroku toolbelt CLI:
+- I want to be able to Feel my personal and payment information is safe and secure so that I can Confidently provide the needed information to make a purchase
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- I want to be able to View an order confirmation after checkout so that I can Verify that I haven't made any mistakes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- I want to be able to Receive an email confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records
 
-------
+### As a Site User:
+- I want to be able to Easily register for an account so that i can Have a personal account and be able to view my profile
 
-## Release History
+- I want to be able to Easily login or logout so that I can Access my personal account information
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- I want to be able to Easily recover my password in case i forget it so that i can Recover access to my account
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- I want to be able to Receive an email confirmation after registering so that i can Verify that my account registration was successful
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- I want to be able to Have a personalised user profile so that I can View my personal order history and order confirmations and save my payment information.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### As a Site Admin:
+- I want to be able to Add a product so that i can Add new items to my store
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- I want to be able to Edit/Update a product so that i can Change product prices, descriptions, images and other product criteria
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- I want to be able to Delte a product so that i can Remove items that are no longer for sale
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Wireframes
+Before I created the repository and started coding I created some wireframes for how I wanted the site to look originally, these are likely to change over the course of the project.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Home page
+### Products page
+### Products Detail page
+### Bag page
+### Checkout page
+### Profile page
+### Register page
+### Login page
+### Logout page
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Navigation Bar
+### Welcome Message
+### Background Image
+### Call to action
+### Product list
+### Product Detail
+### Reviews?
+### Login
+### Logout
+### Register
+### Profile
+### Admin add product
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies Used
+During this project I used multiple different technologies to help bring my idea to life, below is a list of the technologies used with a brief explanation.
+* [Python](https://wiki.python.org/moin/FrontPage) - This language was used for the back end development.
+* [Django](https://www.djangoproject.com/) - This was the Python framework I used to help create my project.
+* [HTML](https://en.wikipedia.org/wiki/HTML) - I used HTML language to create the base/structure of the project.
+* [CSS](https://en.wikipedia.org/wiki/CSS) - I used CSS language to style the overall website except for code taken from [Bootstrap](https://getbootstrap.com/).
+* [Bootstrap](https://getbootstrap.com/) - I used bootstrap to import code and speed up the development process.
+* [GitHub](https://github.com/) - GitHub is where all my code was stored and kept in one place.
+* [GitHub Projects]() - GitHub Projects is what I used to keep track of my User Stories and to help me stay on track with developing the features users would need.
+* [GitHub Issues]() - GitHub Issues is where I created my User Stories, I also used the issues tab to keep track of bugs that I encountered while coding this project.
+* [Gitpod](https://www.gitpod.io/) - Gitpod is the environment in which I did all the coding and where the code was built.
+* [Heroku](https://www.heroku.com) - Heroku was what I used to deploy the project.
+* [Git](https://git-scm.com/) - Git is a free and open source version control system which I used for version control.
+* [OBS Studio](https://obsproject.com/) - OBS is a recording/streaming software which I used to record myself doing the final test video for the project.
+* [Photoshop](https://www.adobe.com/uk/products/photoshop.html) - Photoshop is a raster graphics editor developed and published by Adobe Inc. I used this to edit images to fit my purpose.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing
+All testing has been done and documented in the [TESTING.md](TESTING.md) file. 
+This includes: 
+* Video testing.
+* Bugs.
+* Validators.
+* Browser Compatibility.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Deployment
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Local Deployment
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Credits
