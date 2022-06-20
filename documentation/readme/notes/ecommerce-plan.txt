@@ -1,0 +1,101 @@
+ecommerce plan - dream coaching? because we help you get your dream rank?
+- sells online coaching sessions for video games
+- online store
+
+Questions:
+
+1 - Which ecommerce application types apply to this online business?
+	- B2C, Service, Single Payment
+
+2 - With the ecommerce application types in mind, what kind of features might be included within the business website?
+	- Easy payment gateway
+	- Authentication system
+	- Shopping cart
+	- Account creation
+	- Library of products / images / descriptions
+	- Category selection / search fields
+	- Reviews?
+
+3 - What tables of data would your database need, and what data might be included in these tables?
+
+Product/Service:
+	- Name
+	- Description
+	- Price
+	- Length of coaching session
+	- Delivery options ( pick a date from a selection )
+	- Image
+	-
+
+User:
+	- Username
+	- Email
+	- Password
+
+OrderItem:
+	- Order
+	- Product
+	- Quantity
+
+Order:
+	- User
+	- Total
+	- Full_name
+	- billing address
+
+4 - What pages the website will contain
+
+Home:
+- Nav bar
+- Background picture (like walkthrough)
+- CTA to product page
+- Some information
+
+Products/Product details:
+- Categories (different games)
+- Nav bar
+- Each game has multiple session lengths / Maybe a bundle as well
+- Date selector
+- Images
+
+Bag:
+- Subtotal
+- Total
+- List of items
+- Remove item options?
+
+Checkout:
+- Similar to bag
+- Billing address
+- Account information if first time (save for later box unticked)
+- Auto filled for members 
+
+Profile:
+- Username
+- Email
+- Billing information
+- Order History
+- Order confirmations
+
+Login/Logout/Register:
+- Username
+- Email
+- Password
+- Password Recovery
+- Buttons
+
+Admin add product:
+- Product Title
+- Product Image
+- Product Description
+- Product Category
+
+Edit/Update Product:
+- Product Title
+- Product Image
+- Product Description
+- Product Category
+
+Delete Product:
+- Delete button
+- Approve delete to prevent accidental deletion ?
