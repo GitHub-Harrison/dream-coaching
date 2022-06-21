@@ -15,7 +15,7 @@ class Category(models.Model):
         return self.friendly_name
 
 
-class Package(models.Model):
+class Product(models.Model):
 
     name = models.CharField(max_length=250)
     description = models.TextField()
