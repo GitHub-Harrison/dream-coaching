@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    /* full image for home page background */
     background: url('/media/') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
@@ -54,6 +55,18 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+/* overlay for rest of the site to remove the background img */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: lightcyan;
+    /* z-index ensure it sits behind content */
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
