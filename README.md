@@ -3,8 +3,10 @@ Dream Coaching  is a complete and simple ecommerce website which provides users 
 
 ![Am I Responsive Screenshot]()
 
-## User Stories
+## [User Stories](https://github.com/GitHub-Harrison/dream-coaching/projects/1)
 One of the first things I did after deciding what my project would be was to create some user stories to help figure out what functionality the website would need.
+
+After listing out the basic user stories that would help me create a complete ecommerce website I created a [kanban project board](https://github.com/GitHub-Harrison/dream-coaching/projects/1) where I would move the stories into columns depending on what stage I was on (To do, Put on hold, In progress, Finished and Discarded).
 
 ### As a Shopper:
 - I want to View a list of products so that i can select some to purchase
