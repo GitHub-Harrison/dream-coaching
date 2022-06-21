@@ -55,14 +55,23 @@ One of the first things I did after deciding what my project would be was to cre
 Before I created the repository and started coding I created some wireframes for how I wanted the site to look originally, these are likely to change over the course of the project.
 
 ### Home page
+![Home Page Wireframe](documentation/readme/wireframes/home.png)
 ### Products page
+![Home Page Wireframe](documentation/readme/wireframes/products.png)
 ### Products Detail page
+![Home Page Wireframe](documentation/readme/wireframes/product-detail.png)
 ### Bag page
+![Home Page Wireframe](documentation/readme/wireframes/bag.png)
 ### Checkout page
+![Home Page Wireframe](documentation/readme/wireframes/checkout.png)
 ### Profile page
+![Home Page Wireframe](documentation/readme/wireframes/profile.png)
 ### Register page
+![Home Page Wireframe](documentation/readme/wireframes/register.png)
 ### Login page
+![Home Page Wireframe](documentation/readme/wireframes/login.png)
 ### Logout page
+![Home Page Wireframe](documentation/readme/wireframes/logout.png)
 
 ## Features
 
