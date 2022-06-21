@@ -2,5 +2,27 @@ from django.contrib import admin
 from .models import Package, Category
 
 # Register your models here.
-admin.site.register(Package)
-admin.site.register(Category)
+
+class PackageAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'category',
+        'price',
+        'tier',
+        'duration',
+        'date',
+        'image',
+    )
+
+    ordering = ('name',)
+
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
+admin.site.register(Package, PackageAdmin)
+admin.site.register(Category, CategoryAdmin)
