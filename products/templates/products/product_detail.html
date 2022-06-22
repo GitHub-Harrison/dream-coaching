@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div>
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top rounded">
+                    </a>
+                </div>   
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container">
+                    <p>{{ product.name }}</p>
+                    <p class="fw-bold">£{{ product.price }}</p>
+                    <p>{{ product.tier }}</p>
+                    <p>{{ product.duration }}</p>
+                    <p>{{ product.description }}</p>
+                    <p>{{ product.date }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
