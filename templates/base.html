@@ -60,9 +60,9 @@
                                         All Packages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="all-products-link">
-                                        <a class="dropdown-item" href="">By Price</a>
-                                        <a class="dropdown-item" href="">By Tier</a>
-                                        <a class="dropdown-item" href="">By Duration</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?sort=tier&direction=desc">By Tier</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?sort=duration&direction=desc">By Duration</a>
                                         <a class="dropdown-item" href="{% url 'products' %}">All Packages</a>
                                     </div>
                                 </li>
