@@ -56,28 +56,29 @@
                             <ul class="navbar-nav w-auto mx-auto">
                                 <!-- filter all products by -->
                                 <li class="nav-item dropdown">
-                                    <a href="{% url 'products' %}" class="fw-bold nav-link" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        All Products
+                                    <a href="{% url 'products' %}" class="fw-bold nav-link" name="all-products-link" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        All Packages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="all-products-link">
                                         <a class="dropdown-item" href="">By Price</a>
                                         <a class="dropdown-item" href="">By Tier</a>
                                         <a class="dropdown-item" href="">By Duration</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}">All Packages</a>
                                     </div>
                                 </li>
                                 <!-- filtered by categories -->
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="fw-bold nav-link" id="categories-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" class="fw-bold nav-link" name="categories-link" id="categories-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Categories
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="categories-link">
-                                        <a class="dropdown-item" href="">Valorant</a>
-                                        <a class="dropdown-item" href="">Overwatch</a>
-                                        <a class="dropdown-item" href="">Apex Legends</a>
-                                        <a class="dropdown-item" href="">League of Legends</a>
-                                        <a class="dropdown-item" href="">Tom Clancy's Rainbow Six Siege</a>
-                                        <a class="dropdown-item" href="">Counter-Strike: Global Offensive</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=valorant">Valorant</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=overwatch">Overwatch</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=apex">Apex Legends</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=lol">League of Legends</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=r6">Tom Clancy's Rainbow Six Siege</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=csgo">Counter-Strike: Global Offensive</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=valorant,overwatch,apex,lol,r6,csgo">All Categories</a>
                                     </div>
                                 </li>
                                 <!-- contact us -->
