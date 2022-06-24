@@ -2,24 +2,39 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row align-items-center h-100">
-            <div class="col-4"><h2>Who we are</h2></div>
-            <div class="col-4"><h2>What we do</h2></div>
-            <div class="col-4"><h2>How we do</h2></div>
-            <div class="">
-                <h4>
-                    <a href="{% url 'products' %}" class="book-now-button btn btn-black">Book Now</a>
-                </h4>
-            </div>
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-4">
+            <h2>Who we are</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto soluta magnam quia rem
+                accusamus? Veniam, quasi! Eius, laudantium! Sed ullam odio voluptatum aliquam officiis cumque eligendi
+                porro voluptatibus eaque!</p>
+        </div>
+        <div class="col-4">
+            <h2>What we do</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati voluptas est explicabo consectetur
+                quisquam corporis, perspiciatis, aperiam ipsum adipisci ut animi maxime eum, ratione id aliquam
+                inventore in labore at?</p>
+        </div>
+        <div class="col-4">
+            <h2>How we do</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit vitae cupiditate dignissimos tempora? Nihil
+                odit deleniti, quasi numquam adipisci placeat, facere iusto quis, inventore recusandae earum quia
+                aliquam cumque voluptatum.</p>
+        </div>
+        <div class="">
+            <h4>
+                <a href="{% url 'products' %}" class="book-now-button btn btn-black">Book Now</a>
+            </h4>
         </div>
     </div>
+</div>
 {% endblock %}
