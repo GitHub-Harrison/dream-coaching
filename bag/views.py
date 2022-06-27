@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 
-def bag(request):
+def view_bag(request):
     """ a view to return the bag page """
 
     return render(request, 'bag/bag.html')
