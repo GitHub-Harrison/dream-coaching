@@ -12,6 +12,6 @@ def contact_us(request):
         contact.name = name
         contact.email = email
         contact.message = message
-        contact.save
+        contact.save()
 
     return render(request, 'contact/contact.html')
