@@ -32,13 +32,13 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="">
+                                <a href="{% url 'products' %}" class="btn btn-secondary">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
+                                    <span>Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="" value="Add to Bag">
+                                <input type="submit" class="btn btn-secondary" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
