@@ -29,22 +29,14 @@ body {
 
 /* site buttons */
 .book-now-button {
-    background: black;
+    background: #6c757d;
     color: white;
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.shop-now-button:focus {
     background: #222;
     color: white;
 }
@@ -64,9 +56,29 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: lightcyan;
+    background: rgb(255, 255, 255);
     /* z-index ensure it sits behind content */
     z-index: -1;
+}
+
+/* centering forms */
+.form-center {
+    display: flex;
+    justify-content: center;
+}
+
+.log-center {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.form-bg {
+    background-color: rgb(222, 197, 228);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
 }
 
 /* -------------------------------- Media Queries */
@@ -74,7 +86,7 @@ body {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
   }
   
