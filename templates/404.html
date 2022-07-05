@@ -1,14 +1,27 @@
-<h1>The Page You Are Looking For Does Not Exist</h1>
+{% extends "base.html" %}
+{% load static %}
 
-<h3>Here are some links that might help:</h3>
-<ul>
-    <li>
-        <a href="{% url 'home' %}">Home</a>
-    </li>
-    <li>
-        <a href="{% url 'products' %}">Products</a>
-    </li>
-    <li>
-        <a href="{% url 'contact' %}">Contact Us</a>
-    </li>
-</ul>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>The Page You Are Looking For Does Not Exist</h1>
+
+    <h3>Here are some links that might help:</h3>
+    <ul>
+        <li>
+            <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'products' %}">Products</a>
+        </li>
+        <li>
+            <a href="{% url 'contact' %}">Contact Us</a>
+        </li>
+    </ul>
+{% endblock %}
