@@ -8,6 +8,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
+    height: 100%;
 }
 
 /* from Bulma (keep icons centered) */
@@ -70,7 +71,7 @@ body {
 .log-center {
     position: absolute;
     left: 50%;
-    top: 50%; 
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -81,6 +82,14 @@ body {
     border-radius: 12px;
 }
 
+/* footer */
+
+.footer {
+    background-color: #6c757d;
+    height: 150px;
+    padding: 20px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -88,19 +97,19 @@ body {
     .container {
         max-width: 80%;
     }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
