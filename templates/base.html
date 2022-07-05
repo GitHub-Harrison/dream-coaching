@@ -36,7 +36,7 @@
     <title>Dream Coaching {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="container-fluid fixed-top">
         <div class="row">
             <!-- main nav section -->
@@ -48,7 +48,9 @@
                             <h2 class="logo-font text-black my-0">DREAM COACHING</h2>
                         </a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -56,29 +58,42 @@
                             <ul class="navbar-nav w-auto mx-auto">
                                 <!-- filter all products by -->
                                 <li class="nav-item dropdown">
-                                    <a href="{% url 'products' %}" class="fw-bold nav-link" name="all-products-link" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="{% url 'products' %}" class="fw-bold nav-link" name="all-products-link"
+                                        id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                         All Packages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="all-products-link">
-                                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?sort=tier&direction=desc">By Tier</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?sort=duration&direction=desc">By Duration</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By
+                                            Price</a>
+                                        <a class="dropdown-item"
+                                            href="{% url 'products' %}?sort=duration&direction=desc">By Duration</a>
                                         <a class="dropdown-item" href="{% url 'products' %}">All Packages</a>
                                     </div>
                                 </li>
                                 <!-- filtered by categories -->
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="fw-bold nav-link" name="categories-link" id="categories-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" class="fw-bold nav-link" name="categories-link" id="categories-link"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Games
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="categories-link">
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=valorant">Valorant</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=overwatch">Overwatch</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=apex">Apex Legends</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=lol">League of Legends</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=r6">Tom Clancy's Rainbow Six Siege</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=csgo">Counter-Strike: Global Offensive</a>
-                                        <a class="dropdown-item" href="{% url 'products' %}?category=valorant,overwatch,apex,lol,r6,csgo">All Games</a>
+                                        <a class="dropdown-item"
+                                            href="{% url 'products' %}?category=valorant">Valorant</a>
+                                        <a class="dropdown-item"
+                                            href="{% url 'products' %}?category=overwatch">Overwatch</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=apex">Apex
+                                            Legends</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=lol">League of
+                                            Legends</a>
+                                        <a class="dropdown-item" href="{% url 'products' %}?category=r6">Tom Clancy's
+                                            Rainbow Six Siege</a>
+                                        <a class="dropdown-item"
+                                            href="{% url 'products' %}?category=csgo">Counter-Strike: Global
+                                            Offensive</a>
+                                        <a class="dropdown-item"
+                                            href="{% url 'products' %}?category=valorant,overwatch,apex,lol,r6,csgo">All
+                                            Games</a>
                                     </div>
                                 </li>
                                 <!-- contact us -->
@@ -90,7 +105,8 @@
                     </div>
                     <!-- search bar -->
                     <form method="GET" action="{% url 'products' %}" class="d-flex">
-                        <input class="form-control me-2" name="search-box" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" name="search-box" type="search" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
@@ -99,36 +115,38 @@
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="text-center">
                                         <div><i class="fas fa-user fa-lg"></i></div>
                                         <p class="my-0">My Account</p>
                                     </div>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                {% if request.user.is_authenticated %}
+                                    {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="" class="dropdown-item">Product Management</a>
                                     {% endif %}
                                     <a href="" class="dropdown-item">My Profile</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
+                                    {% else %}
                                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                                     <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
+                                    {% endif %}
                                 </ul>
                             </div>
-                        </li>  
+                        </li>
                         <!-- my bag -->
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                                href="{% url 'view_bag' %}">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
-                                            £{{ grand_total|floatformat:2 }}
+                                        £{{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            £0.00
+                                        £0.00
                                         {% endif %}
                                     </p>
                                 </div>
@@ -153,6 +171,11 @@
     {% block postloadjs %}
     {% endblock %}
 
+    
+    <footer class="footer mt-auto">
+        <!-- adding divs causes footer to scroll right/left -->
+        <h1>footer content here</h1>
+    </footer>
 </body>
 
 </html>
