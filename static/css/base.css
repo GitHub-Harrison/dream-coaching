@@ -20,15 +20,12 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 .main-logo-link {
     width: fit-content;
 }
 
 /* site buttons */
+
 .book-now-button {
     background: #6c757d;
     color: white;
