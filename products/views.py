@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
+
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ProductBookingForm
+
 
 # Create your views here.
 
@@ -58,16 +61,22 @@ def product_detail(request, product_id):
     """ a view to show product detail page of product when clicked """
 
     product = get_object_or_404(Product, pk=product_id)
+    product_booking_form = ProductBookingForm()
 
     context = {
         'product': product,
+        'product_booking_form': product_booking_form,
     }
 
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required()
 def add_product(request):
     """ add product admin form """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied, invalid permissions')
+        return redirect(reverse('products'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -86,3 +95,42 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
+
+@login_required()
+def edit_product(request, product_id):
+    """ edit product admin form """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied, invalid permissions')
+        return redirect(reverse('products'))
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product updated successfully')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request, 'Product could not be updated. Please check the form and try again.')
+    else:
+        form = ProductForm(instance=product)
+
+    template = 'products/edit_product.html'
+    context = {
+        'product': product,
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+@login_required()
+def delete_product(request, product_id):
+    """ delete product admin form """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied, invalid permissions')
+        return redirect(reverse('products'))
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted successfully')
+    return redirect(reverse('products'))
