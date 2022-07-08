@@ -24,7 +24,6 @@ class Product(models.Model):
     sku = models.CharField(max_length=200, null=True, blank=True)
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     duration = models.DurationField()
-    date = models.DateField(null=False, blank=False)
 
     def __str__(self):
         return self.name
