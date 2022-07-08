@@ -159,7 +159,14 @@
     </header>
 
     {% if messages %}
-    <div class="message-container"></div>
+        <section id="alerts">
+            {% for msg in messages %}
+                <!-- all django message tags mirror bootstrap, except error/danger -->
+                <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
+                    <h3>{{ msg }}</h3>
+                </aside>
+            {% endfor %}
+        </section>
     {% endif %}
 
     {% block page_header %}
@@ -168,14 +175,13 @@
     {% block content %}
     {% endblock %}
 
-    {% block postloadjs %}
-    {% endblock %}
-
-    
     <footer class="footer mt-auto">
         <!-- adding divs causes footer to scroll right/left -->
         <h1>footer content here</h1>
     </footer>
+    
+    {% block postloadjs %}
+    {% endblock %}
 </body>
 
 </html>
