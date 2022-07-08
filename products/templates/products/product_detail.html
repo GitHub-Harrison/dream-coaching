@@ -15,8 +15,12 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div>
-                    <a href="{{ product.image.url }}" target="_blank">
-                        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top rounded">
+                    <a href="{% url 'product_detail' product.id %}">
+                        {% if product.image %}
+                            <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}" target="_blank">
+                        {% else %}
+                            <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}" target="_blank">
+                        {% endif %}
                     </a>
                 </div>   
             </div>
@@ -26,10 +30,14 @@
                     <p class="fw-bold">£{{ product.price }}</p>
                     <p>{{ product.duration }}</p>
                     <p>{{ product.description }}</p>
-                    <p>{{ product.date }}</p>
 
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
+                        <div class="form-row">
+                            <div class="col-12">
+                                {{ product_booking_form }}
+                            </div>
+                        </div>
                         <div class="form-row">
                             <div class="col-12">
                                 <a href="{% url 'products' %}" class="btn btn-secondary">
@@ -43,8 +51,39 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'edit_product' product.id %}" class="btn btn-primary">Edit</a>
+                        <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{ product.id }}">Delete</a>
+                        <div class="modal fade" id="modal-{{ product.id }}" tabindex="-1" aria-labelledby="modal-{{ product.id }}-label"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal-{{ product.id }}-label">Delete {{ product.name }}</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure you want to delete {{ product.name }}. This cannot be undone.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    <script>
+        let date = document.getElementById('id_date');
+        let now = new Date();
+        date.setAttribute('min', now.toISOString().substring(0, 10));
+    </script>
 {% endblock %}
