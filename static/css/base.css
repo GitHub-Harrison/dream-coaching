@@ -11,6 +11,12 @@ body {
     height: 100%;
 }
 
+/* alerts */
+#alerts{
+    margin-top: 12vh;
+}
+
+
 /* from Bulma (keep icons centered) */
 .icon {
     align-items: center;
