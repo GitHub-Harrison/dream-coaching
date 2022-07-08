@@ -2,6 +2,19 @@ from django import forms
 from .models import Product, Category
 
 
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+
+class ProductBookingForm(forms.Form):
+    date = forms.DateField(
+        widget=DateInput()
+    )
+
+    class Meta:
+        fields = ['date']
+
+
 class ProductForm(forms.ModelForm):
 
     class Meta:
