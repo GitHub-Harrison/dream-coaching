@@ -17,7 +17,6 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)  # do i need grand total if each item only has one quantity?
-    original_bag = models.TextField(null=False, blank=False, default='')
     # Add stripe pid
 
     def _generate_order_number(self):
