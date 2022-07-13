@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Checkout</h1>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <p class="">Order Summary ({{ product_count }})</p>
+            <div class="row">
+                <div class="col-7 offset-2">
+                    <p class="">Item</p>
+                </div>
+                <div class="">
+                    <p class="">Subtotal</p>
+                </div>
+            </div>
+            {% for item in bag_items %}
+                <div class="row">
+                    <div class="col-2 mb-1">
+                        <a href="{% url 'product_detail' item.product.id %}">
+                            {% if item.product.image %}
+                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                            {% else %}
+                                <img class="w-100" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}">
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small">Date: {{ item.date }}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="my-0 small">£{{ item.product.price }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <hr>
+            <div class="row text-black">
+                <div class="col-7 offset-2">
+                    <p class="my-0">Order Total:</p>
+                </div>
+                <div class="col-3">
+                    <p class="my-0">£{{ total | floatformat:2 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <p>Please fill out the form below to complete your order</p>
+
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <fieldset class="">
+                    <legend>Details</legend>
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                </fieldset>
+
+                <fieldset class="">
+                    <legend>Payment information</legend>
+                    <hr>
+                    <!-- a stripe card element will go here -->
+                    <div id="card-element"></div>
+
+                    <!-- used to display form errors -->
+                    <div id="card-errors"></div>
+                </fieldset>
+
+            </form>
+
+            <div class="">
+                <a href="{% url 'view_bag' %}" class="btn btn-secondary">
+                    <span class="fw-bold">Adjust Bag</span>
+                </a>
+                <button>
+                    <span class="fw-bold">Complete Order</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </button>
+                <p class="text-danger small">
+                    <span>Your card will be charged <strong>£{{ total|floatformat:2 }}</strong></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
