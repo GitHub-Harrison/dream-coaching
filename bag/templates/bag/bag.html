@@ -15,20 +15,68 @@
     <div class="row">
         <div class="col">
             <h2>Shopping Bag</h2>
+            <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                {% for item in bag_items %}
-                    <div>
-                        {{ item.product.name }}
-                        <br>
-                        {{ item.date }}
-                    </div>
-                    <hr>
-                {% endfor %}
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Info</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        
+                        {% for item in bag_items %}
+                            <tr>
+                                <td class="w-25">
+                                    {% if item.product.image %}
+                                        <img class="w-50" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                    {% else %}
+                                        <img class="w-50" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}">
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <p><strong>{{ item.product.name }}</strong></p>
+                                </td>
+                                <td>
+                                    <p>£{{ item.product.price }}</p>
+                                </td>
+                                <td>
+                                    <p>{{ item.date }}</p>
+                                </td>
+                                <td>
+                                    <p>£{{ item.product.price }}</p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        <tr>
+                            <td>
+                                <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="{% url 'products' %}" class="btn btn-primary">
+                                    <span>Keep Shopping</span>
+                                </a>
+                                <a href="{% url 'checkout' %}" class="btn btn-secondary">
+                                    <span>Secure Checkout</span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             {% else %}
                 <p>Your bag is empty</p>
                 <a href="{% url 'products' %}" class="btn btn-secondary">
