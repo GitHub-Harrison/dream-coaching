@@ -27,42 +27,51 @@
     <div class="row">
         <div class="col-12">
             <h4 class="">Order Summary ( add product counter ? )</h4>
-            <div class="row">
-                <div class="col-9">
-                    <p class="">Item</p>
-                </div>
-                <div class="col-3">
-                    <p class="">Subtotal</p>
-                </div>
-            </div>
-            {% for item in bag_items %}
-                <div class="row">
-                    <div class="col-2">
-                        <a href="{% url 'product_detail' item.product.id %}">
-                            {% if item.product.image %}
-                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
-                            {% else %}
-                                <img class="w-100" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}">
-                            {% endif %}
-                        </a>
-                    </div>
-                    <div class="col-7">
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small">Date: {{ item.date }}</p>
-                    </div>
-                    <div class="col-3">
-                        <p class="my-0 fw-bold">£{{ item.product.price }}</p>
-                    </div>
-                </div>
-                <hr>
-            {% endfor %}
-            <div class="row">
-                <div class="col-7 offset-2">
-                    <p class="my-0 fw-bold">Order Total:</p>
-                </div>
-                <div class="col-3">
-                    <p class="my-0 fw-bold">£{{ total | floatformat:2 }}</p>
-                </div>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    
+                    {% for item in bag_items %}
+                        <tr>
+                            <td class="w-25">
+                                {% if item.product.image %}
+                                    <img class="w-50" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% else %}
+                                    <img class="w-50" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}">
+                                {% endif %}
+                            </td>
+                            <td>
+                                <p><strong>{{ item.product.name }}</strong></p>
+                            </td>
+                            <td>
+                                <p>£{{ item.product.price }}</p>
+                            </td>
+                            <td>
+                                <p>{{ item.date }}</p>
+                            </td>
+                            <td>
+                                <p>£{{ item.product.price }}</p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h6><strong>Order Total:</strong></h6></td>
+                        <td>
+                            <h6><strong>£{{ total|floatformat:2 }}</strong></h6>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="col-12">
@@ -89,10 +98,10 @@
             </form>
 
             <div class="">
-                <a href="{% url 'view_bag' %}" class="btn btn-secondary">
+                <a href="{% url 'view_bag' %}" class="btn btn-primary">
                     <span class="fw-bold">Adjust Bag</span>
                 </a>
-                <button>
+                <button class="btn btn-secondary">
                     <span class="fw-bold">Complete Order</span>
                     <span class="icon">
                         <i class="fas fa-lock"></i>
