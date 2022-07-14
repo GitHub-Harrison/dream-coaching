@@ -33,7 +33,6 @@ body {
 /* site buttons */
 
 .book-now-button {
-    background: #6c757d;
     color: white;
     min-width: 260px;
 }
@@ -41,7 +40,7 @@ body {
 .book-now-button:hover,
 .book-now-button:active,
 .book-now-button:focus {
-    background: #222;
+    background: rgb(0, 0, 0);
     color: white;
 }
 

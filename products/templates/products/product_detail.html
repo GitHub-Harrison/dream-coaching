@@ -40,13 +40,13 @@
                         </div>
                         <div class="form-row">
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-secondary">
+                                <a href="{% url 'products' %}" class="btn btn-primary">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span>Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-secondary" value="Add to Bag">
+                                <input type="submit" class="btn btn-primary" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -67,7 +67,7 @@
                                         Are you sure you want to delete {{ product.name }}. This cannot be undone.
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                                         <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Delete</a>
                                     </div>
                                 </div>
