@@ -46,13 +46,13 @@
                                     </span>
                                     <span>Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-primary" value="Add to Bag">
+                                <input type="submit" class="btn btn-success" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
                     {% if request.user.is_superuser %}
-                        <a href="{% url 'edit_product' product.id %}" class="btn btn-primary">Edit</a>
+                        <a href="{% url 'edit_product' product.id %}" class="btn btn-warning">Edit</a>
                         <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{ product.id }}">Delete</a>
                         <div class="modal fade" id="modal-{{ product.id }}" tabindex="-1" aria-labelledby="modal-{{ product.id }}-label"
                             aria-hidden="true">
