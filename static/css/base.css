@@ -52,6 +52,11 @@ body {
     border: 1px solid black !important;
 }
 
+/* make ahref cursor hover to pointer */
+.remove-item {
+    cursor: pointer;
+}
+
 /* overlay for rest of the site to remove the background img */
 .overlay {
     height: 100%;

@@ -31,6 +31,7 @@
                                 <th scope="col">Price</th>
                                 <th scope="col">Date</th>
                                 <th scope="col">Subtotal</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         
@@ -55,6 +56,9 @@
                                 <td>
                                     <p>£{{ item.product.price }}</p>
                                 </td>
+                                <td>
+                                    <a class="text-danger remove-item" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                </td>
                             </tr>
                         {% endfor %}
                         <tr>
@@ -65,14 +69,15 @@
                             <td>
                                 <h6><strong>£{{ total|floatformat:2 }}</strong></h6>
                             </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>
                                 <a href="{% url 'products' %}" class="btn btn-primary">
-                                    <span>Keep Shopping</span>
+                                    <span class="fw-bold">Keep Shopping</span>
                                 </a>
                                 <a href="{% url 'checkout' %}" class="btn btn-secondary">
-                                    <span>Secure Checkout</span>
+                                    <span class="fw-bold">Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fas fa-lock"></i>
                                     </span>
@@ -84,7 +89,7 @@
             {% else %}
                 <p>Your bag is empty</p>
                 <a href="{% url 'products' %}" class="btn btn-primary">
-                    <span>Keep Shopping</span>
+                    <span class="fw-bold">Keep Shopping</span>
                 </a>
             {% endif %}
         </div>
