@@ -7,7 +7,7 @@ class OrderForm(forms.ModelForm):
 
     class Meta:
         model = Order
-        fields = ('full_name', 'email', 'phone_number',)  # potentially adding billing address
+        fields = ('full_name', 'email',)  # potentially adding billing address
 
     def __init__(self, *args, **kwargs):
         """
@@ -18,7 +18,6 @@ class OrderForm(forms.ModelForm):
         placeholders = {
             'full_name': 'Full Name',
             'email': 'Email Address',
-            'phone_number': 'Phone Number',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
