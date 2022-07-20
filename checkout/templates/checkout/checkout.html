@@ -84,6 +84,18 @@
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
+                
+                <div class="form-check form-check-inline float-right mr-0">
+                    {% if user.is_authenticated %}
+                        <label class="form-check-label" for="id-save-info">Save this information to my profile</label>
+                        <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                    {% else %}
+                        <label class="form-check-label" for="id-save-info">
+                            <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                            <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                        </label>
+                    {% endif %}
+                </div>
 
                 <fieldset class="">
                     <legend class="fieldset-label">Payment</legend>
@@ -92,6 +104,8 @@
 
                     <!-- Used to display form errors -->
                     <div class="text-danger" id="card-errors" role="alert"></div>
+
+                    <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
                 <br>
