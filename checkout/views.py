@@ -3,8 +3,8 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import OrderForm
 from .models import Order, OrderLineItem
+from .forms import OrderForm
 from products.models import Product
 from bag.contexts import bag_contents
 
@@ -49,7 +49,7 @@ def checkout(request):
             order.save()
             for item_id, item_data in bag.items():
                 try:
-                    product = get_object_or_404(Product, pk=item_id)
+                    product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -66,14 +66,16 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             messages.error(request, "There was an error within your form. \
                 Please check your information and try again.")
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request,
+                           "There's nothing in your bag at the moment")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -112,7 +114,7 @@ def checkout_success(request, order_number):
             email will be sent to {order.email}.')
 
     if 'bag' in request.session:
-        del requets.session['bag']
+        del request.session['bag']
 
     template = 'checkout/checkout_success.html'
     context = {
