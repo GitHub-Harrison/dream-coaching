@@ -16,7 +16,7 @@ def newsletter_signup(request):
             messages.success(request, 'Your email has been successfully added to our newsletter list!')
             instance.save()
 
-    template = 'home/index.html'
+    template = 'newsletter/newsletter_signup.html'
     context = {
         'form': form,
     }
