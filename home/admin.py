@@ -5,7 +5,7 @@ from .models import NewsletterUser
 
 class NewsletterAdmin(admin.ModelAdmin):
 
-    list_display = ('email', 'date_subscribed')
+    list_display = ('email', 'date_subscribed',)
 
 
 admin.site.register(NewsletterUser, NewsletterAdmin)
