@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class NewsletterUser(models.Model):
+    """ simple newlesletter model """
+    email = models.EmailField()
+    date_subscribed = models.DateTimeField(auto_now_add=True)
