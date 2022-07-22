@@ -74,7 +74,6 @@ def product_detail(request, product_id):
             messages.success(request, 'Your review was successfully added!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            print(form.errors)
             messages.error(request, 'Failed to submit your review')
     else:
         form = ReviewForm()
