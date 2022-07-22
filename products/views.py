@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 
-from .models import Product, Category
-from .forms import ProductForm, ProductBookingForm
+from .models import Product, Category, ProductReview
+from .forms import ProductForm, ProductBookingForm, ReviewForm
 
 
 # Create your views here.
@@ -63,12 +63,30 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product_booking_form = ProductBookingForm()
 
+    # review
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Your review was successfully added!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            print(form.errors)
+            messages.error(request, 'Failed to submit your review')
+    else:
+        form = ReviewForm()
+
+    template = 'products/product_detail.html'
     context = {
         'product': product,
         'product_booking_form': product_booking_form,
+        'form': form,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required()

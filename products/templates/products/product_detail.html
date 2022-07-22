@@ -77,6 +77,51 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h2>Reviews</h2>
+
+                {% if not product.reviews.all %}
+                    No Reviews Yet!
+                    <hr>
+                {% else %}
+                    <div class="review-detail col-6">
+                        {% for review in product.reviews.all %}
+                        <div class="review-container">
+                            <h5>By: <strong>{{ review.user.username }}</strong></h5>
+                            <div class="review-message">
+                                <h5>{{ review.title }}</h5>
+                                <p>{{ review.content }}</p>
+                                <p>{{ review.date_added }}</p>
+                            </div>
+                        </div>
+                        <br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-6">
+                <!-- Review Form -->
+                <h3 class="">Leave A Review</h3>
+                {% if request.user.is_authenticated %}
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        <div>
+                            {{ form.title | as_crispy_field }}
+                            {{ form.content | as_crispy_field }}
+                        </div>
+
+                        <div class="">
+                            <button class="btn btn-primary" type="submit">Submit Review</button>
+                        </div>
+                    </form>
+                {% else %}
+                    <p>Please <a href="{% url 'account_signup' %}">Register</a> or <a href="{% url 'account_login' %}">Login</a> to leave a review.</p>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock %}
 

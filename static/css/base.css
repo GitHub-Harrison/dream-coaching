@@ -44,6 +44,10 @@ body {
     color: white;
 }
 
+.btn {
+    margin: 5px !important;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -87,6 +91,14 @@ body {
     padding: 20px;
     margin: 15px;
     border-radius: 12px;
+}
+
+.review-container {
+    border: black 1px solid;
+}
+
+.review-message {
+    border: gray 1px solid;
 }
 
 /* footer */
