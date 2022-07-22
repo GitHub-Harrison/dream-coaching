@@ -76,13 +76,13 @@ def product_detail(request, product_id):
         else:
             messages.error(request, 'Failed to submit your review')
     else:
-        review_form = ReviewForm()
+        form = ReviewForm()
 
     template = 'products/product_detail.html'
     context = {
         'product': product,
         'product_booking_form': product_booking_form,
-        'form': review_form,
+        'form': form,
     }
 
     return render(request, template, context)

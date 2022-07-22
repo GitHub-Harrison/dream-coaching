@@ -109,8 +109,8 @@
                         {% csrf_token %}
 
                         <div>
-                            {{ review_form.title | as_crispy_field }}
-                            {{ review_form.content | as_crispy_field }}
+                            {{ form.title | as_crispy_field }}
+                            {{ form.content | as_crispy_field }}
                         </div>
 
                         <div class="">
