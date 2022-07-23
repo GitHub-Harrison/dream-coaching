@@ -149,6 +149,8 @@ Before I created the repository and started coding I created some wireframes for
 ### Custom 404 Error
 ![Custom 404 Page](documentation/readme/features/404.png)
 
+## Models Used
+
 ## Technologies Used
 During this project I used multiple different technologies to help bring my idea to life, below is a list of the technologies used with a brief explanation.
 * [Python](https://wiki.python.org/moin/FrontPage) - This language was used for the back end development.
