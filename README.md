@@ -78,17 +78,76 @@ Before I created the repository and started coding I created some wireframes for
 ## Features
 
 ### Navigation Bar
+![Main Navigation Bar](documentation/readme/features/nav-bar.png)
+![Category Navbar Dropdown](documentation/readme/features/category-nav-dropdown.png)
+![Sort By Dropdown Nav](documentation/readme/features/sort-dropdown.png)
+
 ### Welcome Message
+![Welcome Message](documentation/readme/features/welcome-message.png)
+
 ### Background Image
+
 ### Call to action
+![Call to Action Button](documentation/readme/features/cta.png)
+
+### Contact Us
+![Contact Page](documentation/readme/features/contact-page.png)
+
+### Newsletter
+![Newsletter](documentation/readme/features/newsletter.png)
+
 ### Product list
+![Product List](documentation/readme/features/product-list.png)
+
 ### Product Detail
-### Reviews?
-### Login
-### Logout
-### Register
+![Product Details](documentation/readme/features/product-detail.png)
+
+### Reviews
+![Product Reviews](documentation/readme/features/reviews.png)
+![Product Reviews without login](documentation/readme/features/reviews-as-non-user.png)
+
 ### Profile
-### Admin add product
+![Profile Page](documentation/readme/features/profile-page.png)
+
+### Bag
+![Empty Bag](documentation/readme/features/empty-bag.png)
+![Bag with Item](documentation/readme/features/filled-bag.png)
+
+### Checkout
+![Checkout](documentation/readme/features/checkout-page.png)
+
+### Order Success
+![Order Success](documentation/readme/features/order-success-page.png)
+
+### Admin Add product
+![Add Product Page](documentation/readme/features/add-product.png)
+
+### Edit Product
+![Edit Product Page](documentation/readme/features/edit-product.png)
+
+### Delete Product
+![Delete Product](documentation/readme/features/delete-product.png)
+
+### Login
+![Login Page](documentation/readme/features/login.png)
+
+### Logout
+![Logout Page](documentation/readme/features/logout.png)
+
+### Register
+![Register Page](documentation/readme/features/register.png)
+
+### Password Recovery
+![Password Recovery](documentation/readme/features/pw-reset.png)
+
+### Verify Email
+![Email Verification](documentation/readme/features/verify-email.png)
+
+### Confirm Email
+![Email Confirmation](documentation/readme/features/confirm-email.png)
+
+### Custom 404 Error
+![Custom 404 Page](documentation/readme/features/404.png)
 
 ## Technologies Used
 During this project I used multiple different technologies to help bring my idea to life, below is a list of the technologies used with a brief explanation.
