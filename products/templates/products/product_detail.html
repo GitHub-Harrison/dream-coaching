@@ -103,7 +103,7 @@
             </div>
             <div class="col-6">
                 <!-- Review Form -->
-                <h3 class="">Leave A Review</h3>
+                <h3>Leave A Review</h3>
                 {% if request.user.is_authenticated %}
                     <form method="POST">
                         {% csrf_token %}
@@ -113,7 +113,7 @@
                             {{ form.content | as_crispy_field }}
                         </div>
 
-                        <div class="">
+                        <div>
                             <button class="btn btn-primary" type="submit">Submit Review</button>
                         </div>
                     </form>
