@@ -9,49 +9,53 @@ One of the first things I did after deciding what my project would be was to cre
 After listing out the basic user stories that would help me create a complete ecommerce website I created a [kanban project board](https://github.com/GitHub-Harrison/dream-coaching/projects/1) where I would move the stories into columns depending on what stage I was on (To do, Put on hold, In progress, Finished and Discarded).
 
 ### As a Shopper:
-- I want to View a list of products so that i can select some to purchase
+[[#1](https://github.com/GitHub-Harrison/dream-coaching/issues/1)] I want to View a list of products so that i can select some to purchase
 
-- I want to view individual product details so that i can identify the price, description, session length and image
+[[#2](https://github.com/GitHub-Harrison/dream-coaching/issues/2)] I want to view individual product details so that i can identify the price, description, session length and image
 
-- I want to easily view the total of my purchases at any time so that i can avoid spending too much
+[[#3](https://github.com/GitHub-Harrison/dream-coaching/issues/3)] I want to easily view the total of my purchases at any time so that i can avoid spending too much
 
-- I want to be able to Sort the list of avaiable products so that I can Easily identify the best priced and categorically sorted products
+[[#4](https://github.com/GitHub-Harrison/dream-coaching/issues/4)] I want to be able to Sort the list of avaiable products so that I can Easily identify the best priced and categorically sorted products
 
-- I want to be able to Search for a product by name or description so that i can Find the best-priced or best-related products across broad categories.
+[[#5](https://github.com/GitHub-Harrison/dream-coaching/issues/5)] I want to be able to Search for a product by name or description so that i can Find the best-priced or best-related products across broad categories.
 
-- I want to be able to Easily see what i've searched for and the number of results so that I can Quickly decide whether the product I want is available
+[[#6](https://github.com/GitHub-Harrison/dream-coaching/issues/6)] I want to be able to Easily see what i've searched for and the number of results so that I can Quickly decide whether the product I want is available
 
-- I want to be able to Easily select the length and quantity of a session when purchasing it so that I can Ensure I don't accidentally select the wrong product, quantity or length.
+[[#7](https://github.com/GitHub-Harrison/dream-coaching/issues/7)] I want to be able to Easily select the date of a session when purchasing it so that I can Ensure I don't accidentally select the wrong date.
 
-- I want to be able to View items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive
+[[#8](https://github.com/GitHub-Harrison/dream-coaching/issues/8)] I want to be able to View items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive
 
-- I want to be able to Adjust the quantity of individual items in my bag so that I can Easily make changes to my purchase before checkout
+[[#9](https://github.com/GitHub-Harrison/dream-coaching/issues/9)] I want to be able to Adjust the quantity of items in my bag so that I can Easily make changes to my purchase before checkout
 
-- I want to be able to Easily enter my payment information so that I can Check out quickly and with no hassles
+[[#10](https://github.com/GitHub-Harrison/dream-coaching/issues/10)] I want to be able to Easily enter my payment information so that I can Check out quickly and with no hassles
 
-- I want to be able to Feel my personal and payment information is safe and secure so that I can Confidently provide the needed information to make a purchase
+[[#11](https://github.com/GitHub-Harrison/dream-coaching/issues/11)] I want to be able to Feel my personal and payment information is safe and secure so that I can Confidently provide the needed information to make a purchase
 
-- I want to be able to View an order confirmation after checkout so that I can Verify that I haven't made any mistakes
+[[#12](https://github.com/GitHub-Harrison/dream-coaching/issues/12)] I want to be able to View an order confirmation after checkout so that I can Verify that I haven't made any mistakes
 
-- I want to be able to Receive an email confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records
+[[#13](https://github.com/GitHub-Harrison/dream-coaching/issues/13)] I want to be able to Receive an email confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records
 
 ### As a Site User:
-- I want to be able to Easily register for an account so that i can Have a personal account and be able to view my profile
+[[#14](https://github.com/GitHub-Harrison/dream-coaching/issues/14)] I want to be able to Easily register for an account so that i can Have a personal account and be able to view my profile
 
-- I want to be able to Easily login or logout so that I can Access my personal account information
+[[#15](https://github.com/GitHub-Harrison/dream-coaching/issues/15)] I want to be able to Easily login or logout so that I can Access my personal account information
 
-- I want to be able to Easily recover my password in case i forget it so that i can Recover access to my account
+[[#16](https://github.com/GitHub-Harrison/dream-coaching/issues/16)] I want to be able to Easily recover my password in case i forget it so that i can Recover access to my account
 
-- I want to be able to Receive an email confirmation after registering so that i can Verify that my account registration was successful
+[[#17](https://github.com/GitHub-Harrison/dream-coaching/issues/17)] I want to be able to Receive an email confirmation after registering so that i can Verify that my account registration was successful
 
-- I want to be able to Have a personalised user profile so that I can View my personal order history and order confirmations and save my payment information.
+[[#18](https://github.com/GitHub-Harrison/dream-coaching/issues/18)] I want to be able to Have a personalised user profile so that I can View my personal order history and order confirmations and save my payment information.
+
+[[#22](https://github.com/GitHub-Harrison/dream-coaching/issues/22)] I can easily navigate the site so that I can find the products I want to purchase.
+
+[[#26](https://github.com/GitHub-Harrison/dream-coaching/issues/26)] I can contact the admin/support staff so that I can enquire about anything relating to the site or make a complaint.
 
 ### As a Site Admin:
-- I want to be able to Add a product so that i can Add new items to my store
+[[#19](https://github.com/GitHub-Harrison/dream-coaching/issues/19)] I want to be able to Add a product so that i can Add new items to my store
 
-- I want to be able to Edit/Update a product so that i can Change product prices, descriptions, images and other product criteria
+[[#20](https://github.com/GitHub-Harrison/dream-coaching/issues/20)] I want to be able to Edit/Update a product so that i can Change product prices, descriptions, images and other product criteria
 
-- I want to be able to Delte a product so that i can Remove items that are no longer for sale
+[[#21](https://github.com/GitHub-Harrison/dream-coaching/issues/21)] I want to be able to Delte a product so that i can Remove items that are no longer for sale
 
 ## Wireframes
 Before I created the repository and started coding I created some wireframes for how I wanted the site to look originally, these are likely to change over the course of the project.
