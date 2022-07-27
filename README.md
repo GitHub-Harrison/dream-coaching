@@ -3,12 +3,12 @@ Dream Coaching  is a complete and simple ecommerce website which provides users 
 
 ![Am I Responsive Screenshot]()
 
-## [User Stories](https://github.com/GitHub-Harrison/dream-coaching/projects/1)
+# [User Stories](https://github.com/GitHub-Harrison/dream-coaching/projects/1)
 One of the first things I did after deciding what my project would be was to create some user stories to help figure out what functionality the website would need.
 
 After listing out the basic user stories that would help me create a complete ecommerce website I created a [kanban project board](https://github.com/GitHub-Harrison/dream-coaching/projects/1) where I would move the stories into columns depending on what stage I was on (To do, Put on hold, In progress, Finished and Discarded).
 
-### As a Shopper:
+## As a Shopper:
 [[#1](https://github.com/GitHub-Harrison/dream-coaching/issues/1)] I want to View a list of products so that i can select some to purchase
 
 [[#2](https://github.com/GitHub-Harrison/dream-coaching/issues/2)] I want to view individual product details so that i can identify the price, description, session length and image
@@ -35,7 +35,7 @@ After listing out the basic user stories that would help me create a complete ec
 
 [[#13](https://github.com/GitHub-Harrison/dream-coaching/issues/13)] I want to be able to Receive an email confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records
 
-### As a Site User:
+## As a Site User:
 [[#14](https://github.com/GitHub-Harrison/dream-coaching/issues/14)] I want to be able to Easily register for an account so that i can Have a personal account and be able to view my profile
 
 [[#15](https://github.com/GitHub-Harrison/dream-coaching/issues/15)] I want to be able to Easily login or logout so that I can Access my personal account information
@@ -50,36 +50,36 @@ After listing out the basic user stories that would help me create a complete ec
 
 [[#26](https://github.com/GitHub-Harrison/dream-coaching/issues/26)] I can contact the admin/support staff so that I can enquire about anything relating to the site or make a complaint.
 
-### As a Site Admin:
+## As a Site Admin:
 [[#19](https://github.com/GitHub-Harrison/dream-coaching/issues/19)] I want to be able to Add a product so that i can Add new items to my store
 
 [[#20](https://github.com/GitHub-Harrison/dream-coaching/issues/20)] I want to be able to Edit/Update a product so that i can Change product prices, descriptions, images and other product criteria
 
 [[#21](https://github.com/GitHub-Harrison/dream-coaching/issues/21)] I want to be able to Delte a product so that i can Remove items that are no longer for sale
 
-## Wireframes
+# Wireframes
 Before I created the repository and started coding I created some wireframes for how I wanted the site to look originally, these are likely to change over the course of the project.
 
-### Home page
+## Home page
 ![Home Page Wireframe](documentation/readme/wireframes/home.png)
-### Products page
+## Products page
 ![Home Page Wireframe](documentation/readme/wireframes/products.png)
-### Products Detail page
+## Products Detail page
 ![Home Page Wireframe](documentation/readme/wireframes/product-detail.png)
-### Bag page
+## Bag page
 ![Home Page Wireframe](documentation/readme/wireframes/bag.png)
-### Checkout page
+## Checkout page
 ![Home Page Wireframe](documentation/readme/wireframes/checkout.png)
-### Profile page
+## Profile page
 ![Home Page Wireframe](documentation/readme/wireframes/profile.png)
-### Register page
+## Register page
 ![Home Page Wireframe](documentation/readme/wireframes/register.png)
-### Login page
+## Login page
 ![Home Page Wireframe](documentation/readme/wireframes/login.png)
-### Logout page
+## Logout page
 ![Home Page Wireframe](documentation/readme/wireframes/logout.png)
 
-## Features
+# Features
 
 ## Navigation Bar
 ![Main Navigation Bar](documentation/readme/features/nav-bar.png)
@@ -153,9 +153,9 @@ Before I created the repository and started coding I created some wireframes for
 ## Custom 404 Error
 ![Custom 404 Page](documentation/readme/features/404.png)
 
-## Models Used
+# Models Used
 
-## Technologies Used
+# Technologies Used
 During this project I used multiple different technologies to help bring my idea to life, below is a list of the technologies used with a brief explanation.
 * [Python](https://wiki.python.org/moin/FrontPage) - This language was used for the back end development.
 * [Django](https://www.djangoproject.com/) - This was the Python framework I used to help create my project.
@@ -170,8 +170,10 @@ During this project I used multiple different technologies to help bring my idea
 * [Git](https://git-scm.com/) - Git is a free and open source version control system which I used for version control.
 * [OBS Studio](https://obsproject.com/) - OBS is a recording/streaming software which I used to record myself doing the final test video for the project.
 * [Photoshop](https://www.adobe.com/uk/products/photoshop.html) - Photoshop is a raster graphics editor developed and published by Adobe Inc. I used this to edit images to fit my purpose.
+* [Stripe](https://stripe.com/gb) - Stripe was used for the payment side of the website creation.
+* [AWS](https://aws.amazon.com/) - Amazon Web Service was used to store all the static files for this project.
 
-## Testing
+# Testing
 All testing has been done and documented in the [TESTING.md](/TESTING.md) file. 
 This includes: 
 * Video testing.
@@ -179,8 +181,34 @@ This includes:
 * Validators.
 * Browser Compatibility.
 
-## Deployment
+# Deployment
 
-## Local Deployment
+# Local Deployment
 
-## Credits
+# Credits
+
+## Code Related Sources
+Below are the sources that helped me develop my project as well as understanding the code I was writing and to help solve bugs/problems I encountered throughout the development.
+
+| Source | Purpose |
+| --- | --- |
+| [StackOverflow](https://stackoverflow.com/questions/2307674/in-django-what-is-a-sku) | Understanding 'SKU' better to decide if I needed to use it or not |
+| [StackOverflow](https://stackoverflow.com/questions/10851906/python-3-unboundlocalerror-local-variable-referenced-before-assignment) | Fix UnboundLocalError: bug |
+| [StackOverflow](https://stackoverflow.com/questions/53594745/what-is-the-use-of-cleaned-data-in-django) | Understanding 'cleaned_data' function |
+| [GeeksForGeeks](https://www.geeksforgeeks.org/durationfield-django-models/) | DurationField |
+| [Django Docs](https://docs.djangoproject.com/en/4.0/topics/db/models/) | Understanding Models better |
+| [Django Docs](https://docs.djangoproject.com/en/4.0/ref/forms/widgets/) | Understand Widgets better |
+| [Code Institute Lessons](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/) | Understand how to create an e-commerce website |
+| [Bootsrap v5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/) | Understand bootstrap styling |
+
+## Content Related Sources
+
+This project features materials protected by the Fair Use guidelines of the Copyright Act. All rights reserved to the copyright owners.
+
+## People
+
+* Code Institutes' Slack community - For previous threads with similar errors / debugging steps / potential issues & solutions.
+
+* Code Insitutes team of tutors - For helping with code debugging and solution finding.
+
+* Tim Nelson (tim_ci) - For mentoring, suggestions and encouragment
