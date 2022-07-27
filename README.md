@@ -172,7 +172,7 @@ During this project I used multiple different technologies to help bring my idea
 * [Photoshop](https://www.adobe.com/uk/products/photoshop.html) - Photoshop is a raster graphics editor developed and published by Adobe Inc. I used this to edit images to fit my purpose.
 
 ## Testing
-All testing has been done and documented in the [TESTING.md](TESTING.md) file. 
+All testing has been done and documented in the [TESTING.md](/TESTING.md) file. 
 This includes: 
 * Video testing.
 * Bugs.
