@@ -14,9 +14,29 @@ This section consists of all the testing relating to the admin features.
 ## Bugs
 While coding this project I have come across many issues/bugs, I took note of some of the bugs throught the GitHub issues tab and have linked them below:
 
-### Solved Bugs
+## Solved Bugs
 
-### Remaining Bugs
+[[#23](https://github.com/GitHub-Harrison/dream-coaching/issues/23)] - **NameError at /products/1**
+
+[[#24](https://github.com/GitHub-Harrison/dream-coaching/issues/24)] - **UnboundLocalError at /products/**
+
+[[#25](https://github.com/GitHub-Harrison/dream-coaching/issues/25)] - **TemplateDoesNotExists at /contact/**
+
+[[#27](https://github.com/GitHub-Harrison/dream-coaching/issues/27)] - **django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'**
+
+[[#28](https://github.com/GitHub-Harrison/dream-coaching/issues/28)] - **The 'image' attribute has no file associated with it**
+
+[[#29](https://github.com/GitHub-Harrison/dream-coaching/issues/29)] - **NameError**
+
+[[#30](https://github.com/GitHub-Harrison/dream-coaching/issues/30)] - **UnboundLocalError at /checkout/**
+
+## Remaining Bugs
+
+[[#31](https://github.com/GitHub-Harrison/dream-coaching/issues/31)] - **Order Success not showing all pricing**
+
+## Validator Testing
+
+## Browser Compatibility 
 
 * Video testing.
 * Bugs.
