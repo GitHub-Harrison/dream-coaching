@@ -17,9 +17,9 @@
                 <div>
                     <a href="{% url 'product_detail' product.id %}">
                         {% if product.image %}
-                            <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}" target="_blank">
+                            <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}" target="_blank" rel="nofollow">
                         {% else %}
-                            <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}" target="_blank">
+                            <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}placeholder-image.png" alt="{{ product.name }}" target="_blank" rel="nofollow">
                         {% endif %}
                     </a>
                 </div>   
