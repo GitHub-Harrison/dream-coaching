@@ -36,9 +36,7 @@ While coding this project I have come across many issues/bugs, I took note of so
 
 As far as I am aware there are currently no bugs.
 
-# Validator Testing
-
-## HTML Validation
+# HTML Validation
 All pages were passed through the [W3C Validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fdream-coaching.herokuapp.com%2F)
 
 I passed all the pages through using both the URL and the actual page source to be sure that there were no errors.
@@ -131,6 +129,140 @@ I passed all the pages through using both the URL and the actual page source to 
 ## Search Box
 
 ![Search Box URL](/documentation/testing/html-validation/search-box.png)
+
+# PEP8 Validation
+
+I passed my code through a [PEP8 Validator](http://pep8online.com/checkresult) and the results are below: 
+
+## Bag
+
+### contexts.py
+![Contexts.py Validation](/documentation/testing/pep8-validator/bag/contexts.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/bag/urls.py.png)
+
+### views.py
+![Views.py Validation](/documentation/testing/pep8-validator/bag/views.py.png)
+
+## Checkout
+
+### admin.py
+![Admin.py Validation](/documentation/testing/pep8-validator/checkout/admin.py.png)
+
+### forms.py
+![Forms.py Validation](/documentation/testing/pep8-validator/checkout/forms.py.png)
+
+### models.py
+![Models.py Validation](/documentation/testing/pep8-validator/checkout/models.py.png)
+
+### signals.py
+![Signals.py Validation](/documentation/testing/pep8-validator/checkout/signals.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/checkout/urls.py.png)
+
+### views.py
+![Views.py Validation](/documentation/testing/pep8-validator/checkout/views.py.png)
+
+### webhook_handler.py
+![Webhook_handler.py](/documentation/testing/pep8-validator/checkout/webhook_handler.py.png)
+
+### webhooks.py
+![Webhooks.py Validation](/documentation/testing/pep8-validator/checkout/webhooks.py.png)
+
+## Contact
+
+### admin.py 
+![Admin.py Validation](/documentation/testing/pep8-validator/contact/admin.py.png)
+
+### forms.py
+![Forms.py Validation](/documentation/testing/pep8-validator/contact/forms.py.png)
+
+### models.py
+![Models.py Validation](/documentation/testing/pep8-validator/contact/models.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/contact/urls.py.png)
+
+### views.py
+![Views.py Validation](/documentation/testing/pep8-validator/contact/views.py.png)
+
+## Dream Coaching
+
+### settings.py
+![Settings.py Validation](/documentation/testing/pep8-validator/dream-coaching/settings.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/dream-coaching/urls.py.png)
+
+## Home
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/home/urls.py.png)
+
+### views.py
+![Views.py Validation](/documentation/testing/pep8-validator/home/views.py.png)
+
+## Newsletter
+
+### admin.py
+![Admin.py Validation](/documentation/testing/pep8-validator/newsletter/admin.py.png)
+
+### forms.py
+![Forms.py Validation](/documentation/testing/pep8-validator/newsletter/forms.py.png)
+
+### models.py
+![Models.py Validation](/documentation/testing/pep8-validator/newsletter/models.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/newsletter/urls.py.png)
+
+### views.py
+![Views.py Validation](/documentation/testing/pep8-validator/newsletter/views.py.png)
+
+## Products
+
+### admin.py
+![Admin.py Validation](/documentation/testing/pep8-validator/products/admin.py.png)
+
+### forms.py
+![Forms.py Validation](/documentation/testing/pep8-validator/products/forms.py.png)
+
+### models.py
+![Models.py Validation](/documentation/testing/pep8-validator/products/models.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/products/urls.py.png)
+
+### views.py
+
+* I have chosen to leave this 'error' as I am concerned that changing the layout of this line may break the code.
+
+![Views.py Validation](/documentation/testing/pep8-validator/products/views.py.png)
+
+### widgets.py
+![Widgets.py Validation](/documentation/testing/pep8-validator/products/widgets.py.png)
+
+## Profiles
+
+### forms.py
+![Forms.py Validation](/documentation/testing/pep8-validator/profiles/forms.py.png)
+
+### models.py
+![Models.py Validation](/documentation/testing/pep8-validator/profiles/models.py.png)
+
+### urls.py
+![Urls.py Validation](/documentation/testing/pep8-validator/profiles/urls.py.png)
+
+### views.py
+![Views.py Validation](/documentation/testing/pep8-validator/profiles/views.py.png)
+
+# CSS Validation
+
+This validation was done on [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) via the deployed sites url.
+
+![CSS Validation](/documentation/testing/css-validator/css-url.png)
 
 # Browser Compatibility 
 
