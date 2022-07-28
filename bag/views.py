@@ -36,12 +36,12 @@ def remove_from_bag(request, item_id):
     try:
         product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
-        bag.pop(item_id)
+        bag.pop(str(item_id), None)
         messages.success(request, f'Removed {product.name} from your bag')
 
         request.session['bag'] = bag
-        return HttpResponse(status=200)
+        return redirect("view_bag")
 
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)
+        return redirect("view_bag")
