@@ -61,8 +61,8 @@ class StripeWH_Handler:
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
-                profile.defualt_full_name = billing_details.name
-                profile.defualt_email = billing_details.email
+                profile.default_full_name = billing_details.name
+                profile.default_email = billing_details.email
                 profile.save()
 
         order_exists = False
