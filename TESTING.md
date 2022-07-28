@@ -30,9 +30,11 @@ While coding this project I have come across many issues/bugs, I took note of so
 
 [[#30](https://github.com/GitHub-Harrison/dream-coaching/issues/30)] - **UnboundLocalError at /checkout/**
 
+[[#31](https://github.com/GitHub-Harrison/dream-coaching/issues/31)] - **Order Success not showing all pricing**
+
 ## Remaining Bugs
 
-[[#31](https://github.com/GitHub-Harrison/dream-coaching/issues/31)] - **Order Success not showing all pricing**
+As far as I am aware there are currently no bugs.
 
 ## Validator Testing
 
