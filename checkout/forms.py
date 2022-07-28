@@ -27,5 +27,5 @@ class OrderForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = ''  # to add css styling later
+            self.fields[field].widget.attrs['class'] = ''  # add class style
             self.fields[field].label = False  # removes the default labels

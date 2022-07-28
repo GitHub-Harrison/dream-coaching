@@ -102,7 +102,9 @@ def add_product(request):
             messages.success(request, 'Product added successfully')
             return redirect(reverse('add_product'))
         else:
-            messages.error(request, 'Product could not be added. Please check the form and try again.')
+            messages.error(
+                request,
+                'Product could not be added. Please try again.')
     else:
         form = ProductForm()
 
@@ -128,7 +130,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Product updated successfully')
             return redirect(reverse('product_detail', args=[product_id]))
         else:
-            messages.error(request, 'Product could not be updated. Please check the form and try again.')
+            messages.error(
+                request,
+                'Product could not be updated. Please try again.')
     else:
         form = ProductForm(instance=product)
 

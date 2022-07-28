@@ -27,5 +27,5 @@ class UserProfileForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = ''  # to add css styling later
+            self.fields[field].widget.attrs['class'] = ''  # add css class
             self.fields[field].label = False  # removes the default labels

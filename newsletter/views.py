@@ -11,9 +11,13 @@ def newsletter_signup(request):
     if form.is_valid():
         instance = form.save(commit=False)
         if NewsletterUser.objects.filter(email=instance.email).exists():
-            messages.info(request, 'It appears this email is already subscribed to our newsletter!')
+            messages.info(
+                request,
+                'Your email is already subscribed to our newsletter!')
         else:
-            messages.success(request, 'Your email has been successfully added to our newsletter list!')
+            messages.success(
+                request,
+                'Your email was successfully added to our newsletter list!')
             instance.save()
 
     template = 'newsletter/newsletter_signup.html'
