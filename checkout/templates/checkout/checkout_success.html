@@ -57,8 +57,9 @@
                         Order Details:
                     </div>
                 </div>
-
+                <h1>{{ order }}</h1>
                 {% for item in order.lineitems.all %}
+                <h1>{{ item }}</h1>
                     <div class="row">
                         <div class="col-12 col-md-8">
                             <p>{{ item.product.name }}</p>
