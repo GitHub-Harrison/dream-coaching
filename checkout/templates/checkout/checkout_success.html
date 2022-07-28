@@ -59,14 +59,14 @@
                 </div>
 
                 {% for item in order.lineitems.all %}
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <p>{{ item.product.name }}</p>
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <p>{{ item.product.name }}</p>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>{{ item.date }}</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8">
-                        <p>{{ item.date }}</p>
-                    </div>
-                </div>
                 {% endfor %}
 
                 <div class="row">
