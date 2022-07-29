@@ -312,5 +312,30 @@ This validation was done on [W3C CSS Validator](https://jigsaw.w3.org/css-valida
 
 # Browser Compatibility 
 
-* Video testing.
-* Browser Compatibility.
+I have taken the time to test what the site looks like on various different sizes and browsers, I have noticed that on smaller screensizes the navigation bar gets in the way of the top of the screen blocking some content. I have tried fixing this with CSS and other bootstrap classes but as of taking the screenshots I have had no luck in solving the issue.
+
+Below are some screenshots:
+
+## Brave browser on PC
+
+![Brave Browser On Pc](/documentation/testing/browser-comp/brave-pc.png)
+
+## Brave browser on iPad Air
+
+![Brave browser on ipad air](/documentation/testing/browser-comp/brave-ipad-air.png)
+
+## Brave browser on iPhone 12 Pro
+
+![Brave browser on iphone 12 pro](/documentation/testing/browser-comp/brave-iphone12.png)
+
+## FireFox browser on PC
+
+![Firefox browser on pc](/documentation/testing/browser-comp/firefox-pc.png)
+
+## FireFox browser on Galaxy S20
+
+![Firefox browser on galaxy s20](/documentation/testing/browser-comp/firefox-galaxy-s20.png)
+
+## FireFox browser on Kindle Fire (Landscape)
+
+![firefox browser on kindle fire](/documentation/testing/browser-comp/firefox-kindle-fire-landscape.png)
