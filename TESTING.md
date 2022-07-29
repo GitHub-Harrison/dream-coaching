@@ -18,19 +18,35 @@ While coding this project I have come across many issues/bugs, I took note of so
 
 [[#23](https://github.com/GitHub-Harrison/dream-coaching/issues/23)] - **NameError at /products/1**
 
+![NameError at /products/](/documentation/testing/bugs/name-error-product.png)
+
 [[#24](https://github.com/GitHub-Harrison/dream-coaching/issues/24)] - **UnboundLocalError at /products/**
+
+![UnboundLocalError at /products/](/documentation/testing/bugs/unboundlocalerror-at-products.png)
 
 [[#25](https://github.com/GitHub-Harrison/dream-coaching/issues/25)] - **TemplateDoesNotExists at /contact/**
 
+![TemplateDoesNotExists at /contact/](/documentation/testing/bugs/template-contact.png)
+
 [[#27](https://github.com/GitHub-Harrison/dream-coaching/issues/27)] - **django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'**
+
+![django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'](/documentation/testing/bugs/invalid-filter-crispy.png)
 
 [[#28](https://github.com/GitHub-Harrison/dream-coaching/issues/28)] - **The 'image' attribute has no file associated with it**
 
+![The 'image' attribute has no file associated with it](/documentation/testing/bugs/value-error-products.png)
+
 [[#29](https://github.com/GitHub-Harrison/dream-coaching/issues/29)] - **NameError**
+
+![NameError](/documentation/testing/bugs/name-error-checkout.png)
 
 [[#30](https://github.com/GitHub-Harrison/dream-coaching/issues/30)] - **UnboundLocalError at /checkout/**
 
+![UnboundLocalError at /checkout/](/documentation/testing/bugs/unboundlocalerror-at-checkout.png)
+
 [[#31](https://github.com/GitHub-Harrison/dream-coaching/issues/31)] - **Order Success not showing all pricing**
+
+![Order Success not showing all pricing](/documentation/testing/bugs/order-success.png)
 
 ## Remaining Bugs
 
