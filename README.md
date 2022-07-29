@@ -73,6 +73,16 @@ Before starting the creation process of the website I took some time to try and 
 
 All of these documents were created as drafts for a general idea that would continue to evolve during the actual creation of this project.
 
+# SEO
+
+Along with the business model I also took some time to come up with better SEO by doing some keyword research:
+
+* [Keyword Research](/documentation/readme/business-model/notes/keywords-research.txt)
+
+Below are the keywords and description I decided to put into my meta tags:
+
+![Meta Tag KEywords/Description](/documentation/readme/business-model/meta-tag-seo.png)
+
 # Entity Relationship Diagrams
 
 ![ERD Table Format](/documentation/readme/business-model/ERD-tables.png)
