@@ -14,7 +14,7 @@ This section consists of all the testing relating to the admin features.
 # Bugs
 While coding this project I have come across many issues/bugs, I took note of some of the bugs throught the GitHub issues tab and have linked them below:
 
-## Solved Bugs
+# Solved Bugs
 
 [[#23](https://github.com/GitHub-Harrison/dream-coaching/issues/23)] - **NameError at /products/1**
 
@@ -48,7 +48,7 @@ While coding this project I have come across many issues/bugs, I took note of so
 
 ![Order Success not showing all pricing](/documentation/testing/bugs/order-success.png)
 
-## Remaining Bugs
+# Remaining Bugs
 
 As far as I am aware there are currently no bugs.
 
