@@ -50,7 +50,9 @@ While coding this project I have come across many issues/bugs, I took note of so
 
 # Remaining Bugs
 
-As far as I am aware there are currently no bugs.
+I have discovered one issue that I am yet to find a fix for, the issue is the navigation on smaller sizes seems to hide content, and doesn't allow users to scroll to try and find the content that is being hidden by the navigation bar.
+
+* I am still currently working on this but as the deadline is close I might not find a solution to this problem before the final deadline.
 
 # HTML Validation
 All pages were passed through the [W3C Validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fdream-coaching.herokuapp.com%2F)
