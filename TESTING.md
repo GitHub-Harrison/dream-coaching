@@ -310,6 +310,14 @@ This validation was done on [W3C CSS Validator](https://jigsaw.w3.org/css-valida
 
 ![CSS Validation](/documentation/testing/css-validator/css-url.png)
 
+# JS Validation
+
+This validation was done on [JSHint Validator](https://jshint.com/)
+
+When validating my JS file it throws 'One undefined variable' even though when I look at the code it appears to be defined.
+
+![JSHint Validation](/documentation/testing/js-validator/jshint-validator.png)
+
 # Browser Compatibility 
 
 I have taken the time to test what the site looks like on various different sizes and browsers, I have noticed that on smaller screensizes the navigation bar gets in the way of the top of the screen blocking some content. I have tried fixing this with CSS and other bootstrap classes but as of taking the screenshots I have had no luck in solving the issue.
