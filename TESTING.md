@@ -318,6 +318,25 @@ When validating my JS file it throws 'One undefined variable' even though when I
 
 ![JSHint Validation](/documentation/testing/js-validator/jshint-validator.png)
 
+# Lighthouse Testing
+
+I used the lighthouse feature in the developer tools of my browser to test the:
+
+* Performance
+* Accessibility
+* Best Practices
+* SEO
+
+I tested the website twice, once for mobile and once for desktop to. The results are below:
+
+## Lighthouse Test for Desktop
+
+![Lighthouse test for desktop](/documentation/testing/lighthouse/lighthouse-test-desktop.png)
+
+## Lighthouse Test for Mobile
+
+![Lighthouse test for mobile](/documentation/testing/lighthouse/lighthouse-test-mobile.png)
+
 # Browser Compatibility 
 
 I have taken the time to test what the site looks like on various different sizes and browsers, I have noticed that on smaller screensizes the navigation bar gets in the way of the top of the screen blocking some content. I have tried fixing this with CSS and other bootstrap classes but as of taking the screenshots I have had no luck in solving the issue.
