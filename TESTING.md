@@ -8,8 +8,36 @@ The testing process has been broken down into two sections; one from a users poi
 # User Focused Testing
 This section consists of all the testing relating to the user features.
 
+I manually tested the site throughout the whole of the development process primarily testing that all the functions work as expected and to ensure no bugs would stop the user from doing what it is they came to the site to do.
+
+Below are some videos of me testing the final project:
+
+## Testing as anonymous user
+
+[![Anonymous User Testing Video](/documentation/testing/testing-videos-thumbnails/anon-user.png)](https://www.youtube.com/watch?v=ngE1HKeAjy0)
+
+## Testing the register/login/logout feature
+
+[![Register/Login/Logout Video Testing](/documentation/testing/testing-videos-thumbnails/register-login-logout.png)](https://www.youtube.com/watch?v=_KtDV91MD8k)
+
+## Testing as a logged in user
+
+[![Testing as a logged in user](/documentation/testing/testing-videos-thumbnails/logged-in-user.png)](https://www.youtube.com/watch?v=ThwxytYxS2E)
+
 # Admin Focused Testing
 This section consists of all the testing relating to the admin features.
+
+Similar to the user focused testing I also repeatedly tested the features as I was implementing them to ensure they worked as expected.
+
+Below are two videos of me testing the admin features:
+
+## Testing the frontend admin
+
+[![Testing the frontend admin](/documentation/testing/testing-videos-thumbnails/admin-frontend.png)](https://www.youtube.com/watch?v=9Mh7p3OwVL4)
+
+## Testing the backend admin
+
+[![Testing the backend admin](/documentation/testing/testing-videos-thumbnails/admin-backend.png)](https://www.youtube.com/watch?v=TjL_p6_3xy0)
 
 # Bugs
 While coding this project I have come across many issues/bugs, I took note of some of the bugs throught the GitHub issues tab and have linked them below:
