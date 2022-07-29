@@ -73,6 +73,12 @@ Before starting the creation process of the website I took some time to try and 
 
 All of these documents were created as drafts for a general idea that would continue to evolve during the actual creation of this project.
 
+# Entity Relationship Diagrams
+
+![ERD Table Format](/documentation/readme/business-model/ERD-tables.png)
+
+![ERB Basic Format](/documentation/readme/business-model/ERD.png)
+
 # [Marketing Plan](/documentation/readme/business-model/notes/marketing-challenge.txt)
 
 Within the marketing plan I considered using social media as the main focus for reaching out to our audience as social media is a popular platform among everyone and with the correct tags and content we could adjust it to appeal more to fellow gamers.
