@@ -267,6 +267,4 @@ This validation was done on [W3C CSS Validator](https://jigsaw.w3.org/css-valida
 # Browser Compatibility 
 
 * Video testing.
-* Bugs.
-* Validators.
 * Browser Compatibility.
