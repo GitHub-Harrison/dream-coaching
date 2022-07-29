@@ -1,6 +1,6 @@
 # Dream Coaching
 
-![Am I Responsive Screenshot]()
+![Am I Responsive](/documentation/am-i-responsive.png)
 
 ## Purpose
 
