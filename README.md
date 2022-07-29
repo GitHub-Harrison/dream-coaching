@@ -81,7 +81,7 @@ Along with the business model I also took some time to come up with better SEO b
 
 Below are the keywords and description I decided to put into my meta tags:
 
-![Meta Tag KEywords/Description](/documentation/readme/business-model/meta-tag-seo.png)
+![Meta Tag Keywords/Description](/documentation/readme/business-model/meta-tag-seo.png)
 
 # Entity Relationship Diagrams
 
