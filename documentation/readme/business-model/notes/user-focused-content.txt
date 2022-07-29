@@ -1,0 +1,45 @@
+    1- What do your users need?
+    2- What information and features can you provide to meet those needs?
+    3- How can you make the information easy to understand?
+    4- How can you demonstrate expertise, authoritativeness and trustworthiness in your content?
+    5- Would there be other pages within your own site you could link to from your chosen page?
+    6- Are there opportunities to link back to external websites that already rank highly on Google?
+    7- How can you help users discover other relevant parts of your web application?
+
+	1:
+	 -information on the product: what its about, what it does, who its for.
+	 -price of the product: base cost, delivery, quantity, additional charges?
+	 -reviews/ratings
+	 -images/video: a visual representation of the product
+	 -refund policy?
+	
+	2:
+	 -information: brief description of what/why/who
+	 -clear price
+	 -customer review section under the product?
+	 -image and/or video in the product information like on amazon etc
+	 -refund: an explanation on if/how refunds would work.
+
+	3:
+	 -to make the information easy to understand use simple english so even non-native speakers can understand clearly what the product is. Avoid technical words where possible to prevent customers being confused by 'big' words.
+
+	4:
+	 -Expertise: Only information that is related to the product.
+	 -Authoritativeness: Ensure the content is not spam like but valuable to the users.
+	 -Trustworthiness: Reviews from customers, no keyword spamming, professional looking layout.
+
+	5:
+	 -Home (from nav bar)
+	 -FAQ (from nav bar)
+	 -Bag (from nav bar)
+	 -Profile (from nav bar)
+	 -back to products (from top of page)
+	 -Products (from nav bar)
+
+	6:
+	 -Possible links to official game sites related to the product
+
+	7:
+	 -Example:
+		If user is on home page, provide a link to the products (the product relates to what the user has read on the home page).
+	
