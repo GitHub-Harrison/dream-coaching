@@ -76,11 +76,13 @@ While coding this project I have come across many issues/bugs, I took note of so
 
 ![Order Success not showing all pricing](/documentation/testing/bugs/order-success.png)
 
+[[#32](https://github.com/GitHub-Harrison/dream-coaching/issues/32)] - **Navigation hiding content on smaller screens**
+
+![Navigation hiding content on smaller screens](/documentation/testing/bugs/content-hidden-by-nav.png)
+
 # Remaining Bugs
 
-I have discovered one issue that I am yet to find a fix for, the issue is the navigation on smaller sizes seems to hide content, and doesn't allow users to scroll to try and find the content that is being hidden by the navigation bar.
-
-* I am still currently working on this but as the deadline is close I might not find a solution to this problem before the final deadline.
+There are no remaining bugs that I am aware of.
 
 # HTML Validation
 All pages were passed through the [W3C Validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fdream-coaching.herokuapp.com%2F)
@@ -339,7 +341,7 @@ I tested the website twice, once for mobile and once for desktop to. The results
 
 # Browser Compatibility 
 
-I have taken the time to test what the site looks like on various different sizes and browsers, I have noticed that on smaller screensizes the navigation bar gets in the way of the top of the screen blocking some content. I have tried fixing this with CSS and other bootstrap classes but as of taking the screenshots I have had no luck in solving the issue.
+I have taken the time to test what the site looks like on various different sizes and browsers.
 
 Below are some screenshots:
 
@@ -366,3 +368,7 @@ Below are some screenshots:
 ## FireFox browser on Kindle Fire (Landscape)
 
 ![firefox browser on kindle fire](/documentation/testing/browser-comp/firefox-kindle-fire-landscape.png)
+
+## Responsive mobile like size
+
+![Responsive mobile like size](/documentation/testing/browser-comp/after-remove-ft-mobile.png)
