@@ -6,6 +6,8 @@
 
 Dream Coaching  is a complete and simple ecommerce website which provides users with coaching services for their desired video games. The purpose of this is to help users reach their dream rank in the games they play.
 
+* [To Live Site](https://dream-coaching.herokuapp.com/)
+
 # [User Stories](https://github.com/GitHub-Harrison/dream-coaching/projects/1)
 One of the first things I did after deciding what my project would be was to create some user stories to help figure out what functionality the website would need.
 
