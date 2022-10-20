@@ -10,8 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-75">
-    <div class="row align-items-center h-75">
+<div class="container">
+    <div class="row align-items-center">
         <div class="col-md-4 col-sm-12">
             <h2>Who we are</h2>
             <p>We are a group of gamers who have 15-20 years of competitive gaming experience each,
@@ -27,13 +27,16 @@
             </p>
         </div>
         <div class="col-md-4 col-sm-12">
-            <br>
-            <br>
             <h2>How we do</h2>
             <p>The way it works is quite simple. Once you've placed your order we will email
                 you to discuss the more intricate details such as your <a href="https://discord.com/" target="_blank" rel="nofollow">discord</a> username which is
                 what we use to do our live coaching sessions so you can receive feedback instantly.
             </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col offset-4">
             <h4>
                 <a href="{% url 'products' %}" class="book-now-button btn btn-primary">Book Now</a>
             </h4>
