@@ -92,12 +92,17 @@ body {
     border-radius: 12px;
 }
 
+/* review styling */
+.review-detail {
+    background-color: aqua;
+}
+
 .review-container {
-    border: black 1px solid;
+    border: rgb(235, 23, 23) 1px solid;
 }
 
 .review-message {
-    border: gray 1px solid;
+    border: rgb(19, 192, 71) 1px solid;
 }
 
 /* footer */
